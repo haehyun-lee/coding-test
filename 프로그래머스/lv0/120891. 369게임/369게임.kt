@@ -1,5 +1,5 @@
 class Solution {
-    fun solution(order: Int): Int = 
-        order.toString().split("").filter { it.isNotEmpty() && it != "0" }
-        .map(String::toInt).count { it % 3 == 0 }
+    fun solution(order: Int): Int = order.toString()
+        .map { it.digitToInt() }
+        .count { it!= 0 && it % 3 == 0 }
 }
