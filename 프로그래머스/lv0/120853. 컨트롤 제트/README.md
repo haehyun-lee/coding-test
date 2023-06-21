@@ -1,10 +1,10 @@
 # [level 0] 컨트롤 제트 - 120853 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120853) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120853?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 61.3 MB, 시간: 12.20 ms
+메모리: 61.6 MB, 시간: 14.20 ms
 
 ### 구분
 

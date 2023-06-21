@@ -1,12 +1,17 @@
+import java.util.*
+
 class Solution {
     fun solution(s: String): Int {
-        val temp = s.split(" ").toMutableList()
-        for (i in temp.indices){
-            if (temp[i] == "Z") {
-                temp[i] = "0"
-                temp[i - 1] = "0"
+        val stack = Stack<Int>()
+
+        for (w in s.split(" ".toRegex())) {
+            if (w == "Z") {
+                stack.pop()
+            } else {
+                stack.push(w.toInt())
             }
         }
-        return temp.map(String::toInt).sum()
+
+        return stack.sum()
     }
 }
